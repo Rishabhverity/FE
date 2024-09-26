@@ -8,6 +8,7 @@ import Logout from "./pages/Logout";
 import Login from "./Auth/login";
 import Signup from "./Auth/SignUp";
 import ProtectedRoute from "./Auth/ProtectedRoute";
+import AccountDashboard from "./pages/AccountsDashboard";
 
 export default function App() {
   return (
@@ -25,7 +26,7 @@ export default function App() {
           <Route path="Attendance" element={<> <Attendance /> </>} />
             
           </Route>
-          
+          <Route path="accounts-dashboard" element={<AccountDashboard/>}/>
       </Routes>
     </div>
   );
