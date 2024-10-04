@@ -1,7 +1,8 @@
 import { Outlet } from "react-router-dom";
-import Header from "./Header";
-import Sidebar from "./Sidebar";
+import Sidebar from "../components/trainerSidebar"
+
 import { useState } from "react";
+import Header from "../components/trainerHeader";
 
 function Layout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
